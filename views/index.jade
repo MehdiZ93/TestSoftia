@@ -1,0 +1,20 @@
+html
+html
+    head
+        title Form Tester
+    body
+        form(action='/form', method='POST')
+            label(for='name') Name :
+            select(id='name' name='user')
+                option(value='') -- Select an option --
+            br
+            label(for='convention') Convention :
+            input(id='convention', name='conventionName' disabled)
+            input(type='hidden' id='conventionId', name='conventionId')
+            br
+            label(for='message') Message :
+            textarea(id='message' name='message')
+            br
+            button(type='submit' value='submit') Submit
+
+    script(type='application/javascript' src='public/js/script.js')
